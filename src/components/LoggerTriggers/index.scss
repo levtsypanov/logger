@@ -1,0 +1,126 @@
+.logger-triggers {
+    flex-direction: column;
+  
+    &,
+    &__trigger-set {
+      display: flex;
+    }
+  
+    &__trigger-set {
+      text-align: left;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    &__title,
+    &__trigger-set {
+      margin-top: 20px;
+    }
+  
+    &__title,
+    &__label {
+      font-weight: bold;
+    }
+  
+    .btn {
+      margin-left: 10px;
+  
+      border-radius: 5px;
+      padding: 10px 25px;
+      outline: transparent;
+  
+      font-weight: bold;
+  
+      /* --- */
+      // https://www.schemecolor.com/
+  
+      background-color: #FAFAFA;
+  
+      &:hover {
+        background-color: #EEEEEE;
+      }
+  
+      &:active {
+        background-color: #CCCCCC;
+      }
+  
+      /* --- */
+  
+      &--debug {
+        background-color: #FFF568;
+  
+        &:hover {
+          background-color: #FFF784;
+        }
+  
+        &:active {
+          background-color: #FFEF43;
+        }
+      }
+  
+      &--info {
+        background-color: #B1F0F0;
+  
+        &:hover {
+          background-color: #BDF5F6;
+        }
+  
+        &:active {
+          background-color: #9BEAEC;
+        }
+      }
+  
+      &--warn,
+      &--timeout {
+        background-color: #FD7F2C;
+  
+        &:hover {
+          background-color: #FD9346;
+        }
+  
+        &:active {
+          background-color: #FF6200;
+        }
+      }
+  
+      &--error,
+      &--network-error {
+        color: #FAFAFA;
+        background-color: #E82322;
+  
+        &:hover {
+          background-color: #FB291B;
+        }
+  
+        &:active {
+          background-color: #CD1B2D;
+        }
+      }
+  
+      &--exception,
+      &--internal-server-error {
+        color: #FAFAFA;
+        background-color: #B01135;
+  
+        &:hover {
+          background-color: #CD1B2D;
+        }
+  
+        &:active {
+          background-color: #9E0C3C;
+        }
+      }
+  
+      &--success {
+        background-color: #72CC6B;
+  
+        &:hover {
+          background-color: #A5D371;
+        }
+  
+        &:active {
+          background-color: #5DC175;
+        }
+      }
+    }
+  }
